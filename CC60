@@ -68,6 +68,7 @@ entity:SetCallback("OnSpawned", function()
 			local object = part:WaitForChild("HumanoidRootPart", 10)
 			local Scrpit = object:WaitForChild("1st", 10)
 			object.CanCollide = false
+
 local sin = math.sin
 local cos = math.cos
 local t = 0
@@ -92,14 +93,7 @@ while task.wait() do
 	end
 	for i,v in pairs(g2:GetChildren()) do
 		v.Rotation = -cos(t / 20) * sin(t / 50) * 35
-	           end
-           end	
-		end)
-
-		if not success then
-			warn("Error in OnSpawned texture animation:", err)
-		end
-	end)
+	end
 end)
 
 entity:SetCallback("OnStartMoving", function()
