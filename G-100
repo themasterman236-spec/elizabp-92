@@ -61,18 +61,6 @@ local entity = spawner.Create({
 
 entity:SetCallback("OnSpawned", function()
 	print("Entity has spawned")
-
-task.spawn(function()
-	while true do
-		wait(0.1)
-		local CameraShaker = require(game.ReplicatedStorage.CameraShaker)
-		local camara = game.Workspace.CurrentCamera
-		local camShake = CameraShaker.new(Enum.RenderPriority.Camera.Value, function(shakeCf)
-			camara.CFrame = camara.CFrame * shakeCf
-		end)
-		camShake:Start()
-		camShake:ShakeOnce(10,3,0.1,0.1,2,0.5)
-	end
 end)
 
 entity:SetCallback("OnStartMoving", function()
