@@ -2,7 +2,7 @@ local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 
 ---====== Configuration ======---
 local EntityName = "B-60"
-local ModelAsset = "rbxassetid://113012609050746"
+local ModelAsset = "rbxassetid://107965972350666"
 local KillSoundID = "rbxassetid://132942725846535"
 
 local FaceIDs = {
