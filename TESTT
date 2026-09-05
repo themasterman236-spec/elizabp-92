@@ -9,7 +9,7 @@ local player = Players.LocalPlayer
 local camera = workspace.CurrentCamera
 
 --// ====== CONFIGURATION ====== --
-local ASSET_ID = "rbxassetid://112470591832028" -- A-60 Asset ID
+local ASSET_ID = "rbxassetid://70849598453290" -- A-60 Asset ID
 local ENTITY_SPEED = 185
 local SPAWN_DELAY = 2
 local KILL_RADIUS = 100 
